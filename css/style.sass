@@ -1,0 +1,909 @@
+body
+    margin: 0
+    padding: 0
+    button:focus
+        outline: none
+    button
+        cursor: pointer
+    .header, .google, .flado, .double_gis, .yell
+        margin-right: 10%
+        margin-left: 10%
+    .header
+        display: flex
+        justify-content: center
+        &__flex_columns_wrap
+            display: flex
+            width: fill-available
+        &__flex_column
+            display: flex
+            width: 100%
+        &__wrap, &__wrap_active
+            border-radius: 4px
+            background-color: #4a0594
+            display: flex
+            justify-content: space-between
+            width: 100%
+            cursor: pointer
+            border: none
+            padding: 0
+            text-align: left
+        &__wrap
+            margin-right: 5px
+        &__numbers
+            padding-top: 20px
+            padding-left: 25px
+            color: #ffffff
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold
+            font-size: 25px
+        &__title_info
+            padding-top: 3px
+            padding-left: 25px
+            padding-bottom: 25px
+            color: #ffffff
+            font-family: 'Roboto', sans-serif;
+            font-size: 13px
+        p
+            margin: 0
+        &__wrap_img
+            padding-top: 20px
+            padding-right: 15px
+    .google
+        margin-top: 35px
+        margin-bottom: 10px
+        &__flex_column
+            display: flex
+        &__wrap
+        padding-left: 25px
+        border-left: 4px solid #5a39a7
+        border-radius: 4px
+        border-top: 1px solid #e6ecf2
+        border-right: 1px solid #e6ecf2
+        border-bottom: 1px solid #e6ecf2
+        display: flex
+        justify-content: space-between
+        &__wrap_tile
+            display: flex
+            padding-top: 20px
+            padding-bottom: 15px
+            align-items: center
+        p
+            margin: 0
+        &__title
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold
+            color: #000000
+            font-size: 16px       
+        &__title_info
+            padding-top: 3px
+            padding-left: 5px
+            font-family: 'Roboto', sans-serif;
+            font-size: 13px
+            color: #bbbcc4
+        &__info_update_mobile
+            display: none
+        &__btn_wrap
+            display: flex
+        &__btn_wrap button
+            display: flex
+            align-items: center;
+            background-color: #ffffff
+            padding-top: 5px
+            padding-left: 10px
+            padding-right: 10px
+            padding-bottom: 5px
+            border-radius: 4px
+            border: 1px solid #e6ecf2
+            font-family: 'Roboto', sans-serif;
+            color: #000000
+            font-size: 13px
+            margin-right: 10px
+
+        &__btn_title
+            padding-left: 5px
+        &__wrap_star
+            display: flex
+            align-items: center
+            padding-top: 15px
+            padding-bottom: 20px
+        &__info
+            padding-left: 5px
+            font-family: 'Roboto', sans-serif;
+            font-size: 13px
+            color: #000000
+        &__number
+            font-family: 'Roboto', sans-serif
+            font-weight: bold
+            font-size: 13px
+            color: #ffaa30
+            padding-left: 5px
+        &__btn_circle
+            cursor: pointer
+            border: none
+            background: none
+            display: grid
+            justify-self: end
+        &__circle_img
+            padding-top: 3px
+        &__info_update
+            font-family: 'Roboto', sans-serif
+            font-size: 13px
+            color: #7b61b8
+            padding-bottom: 20px
+            padding-top: 72px
+        &__wrap_btn_img
+            display: grid
+            padding-top: 20px
+        &__wrap_btn_info
+            padding-right: 22px
+            
+        //active btn
+        #btn_synch:active
+            background-color: #5a39a7
+        
+        .uiButtonActive
+            background-color: #5a39a7;
+            color: #ffffff
+        #help_google
+            position: absolute;
+            margin-left: 69%;
+            margin-top: 4%;
+            display: grid
+
+        #help_google button
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background: #fff;
+            border: 1px solid #e8e8e8;
+            border-radius: 4px;
+            color: #7156b3;
+            cursor: pointer;
+        #help_google img
+            padding-left: 45px
+
+        &__circle, &__circle_active
+            height: 4px;
+            width: 4px;
+            background-color: #cfd5db
+            border-radius: 50%;
+        &__circle
+            margin-bottom: 3px
+    .flado
+        &__wrap
+            padding-left: 25px
+        border-left: 4px solid #5a39a7
+        border-radius: 4px
+        border-top: 1px solid #e6ecf2
+        border-right: 1px solid #e6ecf2
+        border-bottom: 1px solid #e6ecf2
+        display: flex
+        justify-content: space-between
+        margin-bottom: 10px
+        &__flex_column
+            display: flex
+        &__wrap_tile
+            display: flex
+            padding-top: 20px
+            padding-bottom: 15px
+            align-items: center
+        p
+            margin: 0
+        &__title
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold
+            color: #000000
+            font-size: 16px            
+        &__title_info
+            padding-top: 3px
+            padding-left: 5px
+            font-family: 'Roboto', sans-serif;
+            font-size: 13px
+            color: #bbbcc4
+        &__btn_wrap
+            display: flex
+        &__btn_wrap button
+            display: flex
+            align-items: center;
+            background-color: #ffffff
+            padding-top: 5px
+            padding-left: 10px
+            padding-right: 10px
+            padding-bottom: 5px
+            border-radius: 4px
+            border: 1px solid #e6ecf2
+            font-family: 'Roboto', sans-serif;
+            color: #000000
+            font-size: 13px
+            margin-right: 10px
+        button:active
+            background-color: #5a39a7
+        &__btn_title
+            padding-left: 5px
+        &__wrap_star
+            display: flex
+            align-items: center
+            padding-top: 15px
+            padding-bottom: 20px
+        &__info
+            padding-left: 5px
+            font-family: 'Roboto', sans-serif;
+            font-size: 13px
+            color: #000000
+        &__number
+            font-family: 'Roboto', sans-serif
+            font-weight: bold
+            font-size: 13px
+            color: #bbbcc4
+            padding-left: 5px
+        &__btn_circle
+            cursor: pointer
+            border: none
+            background: none
+            display: grid
+            justify-self: end
+        &__circle_img
+            padding-top: 3px
+        &__info_update
+            font-family: 'Roboto', sans-serif
+            font-size: 13px
+            color: #7b61b8
+            padding-bottom: 20px
+            padding-top: 72px
+        &__wrap_btn_img
+            display: grid
+            padding-top: 20px
+        &__wrap_btn_info
+            padding-right: 22px
+        &__btn_star_gray
+            display: flex
+            align-items: center
+            border: none
+            border-radius: 4px
+            background-color: #ffaa30
+            padding-top: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 5px;
+            color: #ffffff
+        &__title_star_gray
+            padding-left: 5px
+            font-family: 'Roboto', sans-serif
+            font-size: 13px
+        &__wrap_btn_star
+            padding-bottom: 20px;
+            padding-top: 54px;
+
+        .uiButtonActive
+            background-color: #5a39a7;
+            color: #ffffff
+        #help_flado
+            position: absolute;
+            margin-left: 69%;
+            margin-top: 4%;
+            display: grid
+
+        #help_flado button
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background: #fff;
+            border: 1px solid #e8e8e8;
+            border-radius: 4px;
+            color: #7156b3;
+            cursor: pointer;
+        #help_flado img
+            padding-left: 45px
+
+        &__circle, &__circle_active
+            height: 4px;
+            width: 4px;
+            background-color: #cfd5db
+            border-radius: 50%;
+        &__circle
+            margin-bottom: 3px
+    .double_gis
+        &__wrap
+            padding-left: 25px
+        border-left: 4px solid #cedae6
+        border-top: 1px solid #e6ecf2
+        border-right: 1px solid #e6ecf2
+        border-bottom: 1px solid #e6ecf2
+        display: flex
+        justify-content: space-between
+        margin-bottom: 10px
+        &__wrap_tile
+            display: flex
+            padding-top: 20px
+            padding-bottom: 15px
+            align-items: center
+        p
+            margin: 0
+        &__title
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold
+            color: #000000
+            font-size: 16px            
+        &__title_info
+            padding-top: 3px
+            padding-left: 5px
+            font-family: 'Roboto', sans-serif;
+            font-size: 13px
+            color: #bbbcc4
+        &__btn_wrap
+            display: flex
+        &__btn_wrap button
+            display: flex
+            align-items: center;
+            background-color: #ffffff
+            padding-top: 5px
+            padding-left: 10px
+            padding-right: 10px
+            padding-bottom: 5px
+            border-radius: 4px
+            border: 1px solid #e6ecf2
+            font-family: 'Roboto', sans-serif;
+            color: #000000
+            font-size: 13px
+            margin-right: 10px
+
+        &__btn_title
+            padding-left: 5px
+        &__wrap_star
+            display: flex
+            align-items: center
+            padding-top: 15px
+            padding-bottom: 20px
+        &__info
+            padding-left: 5px
+            font-family: 'Roboto', sans-serif;
+            font-size: 13px
+            color: #000000
+        &__number
+            font-family: 'Roboto', sans-serif
+            font-weight: bold
+            font-size: 13px
+            color: #bbbcc4
+            padding-left: 5px
+        &__btn_circle
+            cursor: pointer
+            border: none
+            background: none
+            display: grid
+            justify-self: end
+        &__circle_img
+            padding-top: 3px
+        &__info_update
+            font-family: 'Roboto', sans-serif
+            font-size: 13px
+            color: #7b61b8
+            padding-bottom: 20px
+            padding-top: 72px
+        &__wrap_btn_img
+            display: grid
+            padding-top: 20px
+        &__wrap_btn_info
+            padding-right: 22px
+        &__btn_star_gray
+            display: flex
+            align-items: center
+            border: none
+            border-radius: 4px
+            background-color: #ffaa30
+            padding-top: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 5px;
+            color: #ffffff
+        &__title_star_gray
+            padding-left: 5px
+            font-family: 'Roboto', sans-serif
+            font-size: 13px
+        &__wrap_btn_star
+            padding-bottom: 20px;
+            padding-top: 54px;
+        //active btn
+        .uiButtonActive
+            background-color: #5a39a7;
+            color: #ffffff
+        #help_dgis
+            position: absolute;
+            margin-left: 69%;
+            margin-top: 4%;
+            display: grid
+
+        #help_dgis button
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background: #fff;
+            border: 1px solid #e8e8e8;
+            border-radius: 4px;
+            color: #7156b3;
+            cursor: pointer;
+        #help_dgis img
+            padding-left: 45px
+
+        &__circle, &__circle_active
+            height: 4px;
+            width: 4px;
+            background-color: #cfd5db
+            border-radius: 50%;
+        &__circle
+            margin-bottom: 3px
+    .yell
+        padding-left: 25px
+        border-left: 4px solid #cedae6
+        border-top: 1px solid #e6ecf2
+        border-right: 1px solid #e6ecf2
+        border-bottom: 1px solid #e6ecf2
+        display: flex
+        justify-content: space-between
+        margin-bottom: 70px
+        &__wrap_tile
+            display: flex
+            padding-top: 20px
+            padding-bottom: 15px
+            align-items: center
+        p
+            margin: 0
+        &__title
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold
+            color: #000000
+            font-size: 16px            
+        &__title_info
+            padding-top: 3px
+            padding-left: 5px
+            font-family: 'Roboto', sans-serif;
+            font-size: 13px
+            color: #bbbcc4
+        &__btn_wrap
+            display: flex
+        &__btn_wrap button
+            cursor: pointer
+            display: flex
+            align-items: center;
+            background-color: #ffffff
+            padding-top: 5px
+            padding-left: 10px
+            padding-right: 10px
+            padding-bottom: 5px
+            border-radius: 4px
+            border: 1px solid #e6ecf2
+            font-family: 'Roboto', sans-serif;
+            color: #000000
+            font-size: 13px
+            margin-right: 10px
+        &__btn_title
+            padding-left: 5px
+        &__wrap_star
+            display: flex
+            align-items: center
+            padding-top: 15px
+            padding-bottom: 20px
+        &__info
+            padding-left: 5px
+            font-family: 'Roboto', sans-serif;
+            font-size: 13px
+            color: #000000
+        &__number
+            font-family: 'Roboto', sans-serif
+            font-weight: bold
+            font-size: 13px
+            color: #bbbcc4
+            padding-left: 5px
+        &__btn_circle
+            cursor: pointer
+            border: none
+            background: none
+            display: grid
+            justify-self: end
+        &__circle_img
+            padding-top: 3px
+        &__info_update
+            font-family: 'Roboto', sans-serif
+            font-size: 13px
+            color: #7b61b8
+            padding-bottom: 20px
+            padding-top: 72px
+        &__wrap_btn_img
+            display: grid
+            justify-items: end
+            padding-top: 20px
+        &__wrap_btn_info
+            padding-right: 22px
+        &__btn_star_gray
+            display: flex
+            align-items: center
+            border: none
+            border-radius: 4px
+            background-color: #ffaa30
+            padding-top: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 5px;
+            color: #ffffff
+        &__title_star_gray
+            padding-left: 5px
+            font-family: 'Roboto', sans-serif
+            font-size: 13px
+        &__wrap_btn_star
+            padding-bottom: 20px;
+            padding-top: 54px;
+        &__btn_circle a
+            text-decoration: none
+            display: grid
+        
+        #help
+            position: absolute;
+            margin-left: 69%;
+            margin-top: 4%;
+            display: grid
+
+        #help button
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background: #fff;
+            border: 1px solid #e8e8e8;
+            border-radius: 4px;
+            color: #7156b3;
+            cursor: pointer;
+        #help img
+            padding-left: 45px
+
+        &__circle, &__circle_active
+            height: 4px;
+            width: 4px;
+            background-color: #cfd5db
+            border-radius: 50%;
+        &__circle
+            margin-bottom: 3px
+
+@media screen and (max-width:1920px)
+    .google
+        #help_google
+            margin-left: 74% !important;
+            margin-top: 2% !important;
+
+    .flado
+        #help_flado
+            margin-left: 75.3% !important;
+            margin-top: 2% !important;
+    .double_gis
+        #help_dgis
+            margin-left: 75.3% !important;
+            margin-top: 2% !important;
+    .yell
+        #help
+            margin-left: 74% !important;
+            margin-top: 2% !important;
+
+@media screen and (max-width:1536px)
+    .google
+        #help_google
+            margin-left: 72.4% !important
+            margin-top: 3% !important
+    .flado
+        #help_flado
+            margin-left: 74% !important
+            margin-top: 3% !important
+    .double_gis
+        #help_dgis
+            margin-left: 74% !important
+            margin-top: 3% !important
+    .yell
+        #help
+            margin-left: 72.4% !important
+            margin-top: 3% !important
+
+@media screen and (max-width:1440px)
+    .google
+        #help_google
+            margin-left: 72% !important;
+            margin-top: 3% !important;
+
+    .flado
+        #help_flado
+            margin-left: 73.7% !important;
+            margin-top: 3% !important;
+    .double_gis
+        #help_dgis
+            margin-left: 73.7% !important;
+            margin-top: 3% !important;
+    .yell
+        #help
+            margin-left: 71.9% !important;
+            margin-top: 3% !important;
+
+@media screen and (max-width:1280px)
+    .google
+        #help_google
+            margin-left: 71% !important;
+            margin-top: 3.2% !important;
+
+    .flado
+        #help_flado
+            margin-left: 73% !important;
+            margin-top: 3.2% !important;
+    .double_gis
+        #help_dgis
+            margin-left: 72.9% !important;
+            margin-top: 3.3% !important;
+    .yell
+        #help
+            margin-left: 71% !important;
+            margin-top: 3.3% !important;
+            
+@media screen and (max-width:1140px)
+    .header
+        &__flex_columns_wrap
+            display: flex
+            flex-direction: column
+        &__wrap, &__wrap_active
+            margin-bottom: 5px
+        .column-right
+            margin-right: 0
+    .google
+        #help_google
+            margin-left: 69.8% !important;
+            margin-top: 3.6% !important;
+
+    .flado
+        #help_flado
+            margin-left: 72% !important;
+            margin-top: 3.6% !important;
+    .double_gis
+        #help_dgis
+            margin-left: 72% !important;
+            margin-top: 3.6% !important;
+    .yell
+        #help
+            margin-left: 69.9% !important;
+            margin-top: 3.6% !important;
+@media screen and (max-width:1024px)
+    .google
+        #help_google
+            margin-left: 68.8% !important
+    .flado
+        #help_flado
+            margin-left: 71% !important
+    .double_gis
+        #help_dgis
+            margin-left: 71% !important
+    .yell
+        #help
+            margin-left: 68.8% !important
+
+
+@media screen and (max-width:880px)
+    .flado
+        display: flex
+        flex-direction: column
+        &__wrap_btn_info
+            display: flex;
+            padding-bottom: 20px;
+            justify-content: flex-end;
+            padding-left: 22px
+            margin-top: -45px
+        &__wrap_btn_img
+            display: block !important
+            order: 1
+            padding-top: 0 !important
+            margin-top: -11%
+        &__wrap_btn_star
+            padding: 0 !important
+            margin-right: -17px
+        &__wrap_star
+            padding-bottom: 24px !important
+    .google
+        #help_google
+            margin-left: 66.8% !important;
+            margin-top: 4.6% !important;
+    .flado
+        #help_flado
+            margin-left: 69.8% !important;
+            margin-top: 5% !important;
+    .double_gis
+        #help_dgis
+            margin-left: 69.8% !important;
+            margin-top: 4.5% !important;
+    .yell
+        #help
+            margin-left: 66.9% !important;
+            margin-top: 4.5% !important;
+@media screen and ( max-width:790px)
+    .google, .flado, .double_gis
+        &__btn_wrap
+            flex-direction: column !important
+        &__flex_column
+            margin-bottom: 10px !important
+    
+
+@media screen and (max-width:768px)
+    .google
+        &__info_update
+            white-space: nowrap;
+            margin-left: -10px !important
+            padding-top: 59px !important
+        #help_google
+            margin-left: 65% !important;
+            margin-top: 5% !important;
+    .flado
+        #help_flado
+            margin-left: 68% !important;
+            margin-top: 5% !important
+        &__btn_circle
+            margin-top: -14px
+    .double_gis
+        #help_dgis
+            margin-left: 68% !important;
+            margin-top: 5% !important;
+    .yell
+        #help
+            margin-left: 64.8% !important;
+            margin-top: 5% !important;
+
+@media screen and ( max-width:520px)
+    .google
+        flex-direction: column
+        &__info_update
+            padding-top: 0 !important
+        &__wrap_btn_img
+            padding-top: 0 !important
+
+
+@media screen and (max-width:420px)
+    .google, .flado
+        &__title_info
+            display: none
+
+@media screen and (max-width:411px)
+    .header
+        &__flex_column
+            flex-direction: column
+    .google
+        &__btn_wrap
+            display: flex
+            flex-direction: column
+        &__flex_column
+            padding-bottom: 10px 
+
+        &__info_update_mobile
+            display: block !important;
+            font-family: 'Roboto', sans-serif;
+            font-size: 13px;
+            color: #7b61b8;
+            padding-bottom: 20px;
+        &__info_update
+            display: none
+        &__wrap_star
+            width: max-content
+
+
+@media screen and (max-width:375px)
+    .header
+        &__flex_column
+            display: flex
+            flex-direction: column
+    .google
+        padding-left: 10px !important
+        &__flex_column
+            padding-bottom: 10px
+        &__btn_wrap
+            display: flex
+            flex-direction: column
+        &__info_update
+            display: none
+        &__info_update_mobile
+            display: block !important
+            font-family: 'Roboto', sans-serif
+            font-size: 13px
+            color: #7b61b8
+            padding-bottom: 20px
+        &__wrap_star
+            width: max-content
+        &__title_info
+            display: none
+        &__wrap_btn_img
+            margin-left: -10px
+
+    .flado
+        padding-left: 10px !important
+        &__title_info
+            display: none
+        &__wrap
+            padding: 0 !important
+        &__flex_column
+            padding-bottom: 10px
+        &__btn_wrap
+            display: flex
+            flex-direction: column      
+        &__btn_star_gray
+            margin-top: 25%
+        &__wrap_btn_img
+            margin-top: -45% !important;
+            margin-right: -5% !important
+    .double_gis
+        &__wrap
+            padding-left: 10px !important
+        &__btn_star_gray
+            white-space: nowrap
+        &__wrap_btn_star
+            padding-top: 105px !important
+        &__wrap_btn_info
+            padding-right: 9px !important
+        &__btn_wrap
+            position: absolute
+        &__wrap_star
+            position: absolute
+            width: max-content
+            padding-top: 60px !important
+    .yell
+        padding-left: 10px !important
+        &__wrap_btn_info
+            padding-right: 4px !important
+        &__wrap_btn_img
+            //padding-top: 20px !important
+            margin-right: 5px !important
+    .google
+        #help_google
+            margin-left: 56% !important;
+            margin-top: 11% !important;
+    .flado
+        #help_flado
+            margin-left: 56% !important;
+            margin-top: 11% !important;
+    .double_gis
+        #help_dgis
+            margin-left: 59% !important;
+            margin-top: 11% !important;
+        &__btn_wrap
+            z-index: 1
+    .yell
+        #help
+            margin-left: 56.8% !important;
+            margin-top: 11% !important;
+@media screen and (max-width:360px)
+    .flado
+        &__btn_circle
+            margin-right: -15px
+            margin-top: -20px
+        &__wrap_btn_img
+            margin-right: 0 !important
+
+    .google
+        &__info
+            font-size: 12px !important
+        &__wrap_btn_info
+            padding-right: 7px !important
+    .double_gis
+        &__btn_wrap
+            position: absolute
+        &__wrap_star
+            position: absolute
+            width: max-content
+            padding-top: 60px !important
+        &__wrap_btn_info
+            padding-right: 6px !important
+    .google
+        #help_google
+            margin-left: 56% !important;
+            margin-top: 11% !important;
+    .flado
+        #help_flado
+            margin-left: 56% !important;
+            margin-top: 11% !important;
+    .double_gis
+        #help_dgis
+            margin-left: 59% !important;
+            margin-top: 11% !important;
+    .yell
+        #help
+            margin-left: 55.8% !important;
+            margin-top: 11% !important;
